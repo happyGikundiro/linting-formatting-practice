@@ -1,0 +1,29 @@
+.counter-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.counter-container h2 {
+  color: teal;
+}
+
+.counter-value {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: teal;
+}
