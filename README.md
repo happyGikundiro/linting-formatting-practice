@@ -1,27 +1,61 @@
-# LintingFormattingPractice
+# Angular Code Quality Enforcer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+This project demonstrates the setup and configuration of ESLint and Prettier in an Angular project to improve code quality and consistency.
 
-## Development server
+[Live Demo](https://lintingformating-practice.netlify.app/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Project Description
 
-## Code scaffolding
+This Angular application serves as a practical example of integrating and using linting and formatting tools in an Angular environment. It includes:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- ESLint configuration with custom rules
+- Prettier integration for consistent code formatting
+- npm scripts for linting and formatting
+- Pre-commit hooks using husky
+- A sample Angular component adhering to the established linting and formatting rules
 
-## Build
+## Setup Instructions
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
 
-## Running unit tests
+   ```
+   git clone https://github.com/happyGikundiro/linting-formatting-practice.git
+   cd linting-formatting-practice
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Install dependencies:
 
-## Running end-to-end tests
+   ```
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Run the development server:
 
-## Further help
+   ```
+   ng serve
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Open your browser and navigate to `http://localhost:4200/`
+
+## ESLint and Prettier Configurations
+
+### ESLint
+
+The `.eslintrc.json` extends the recommended Angular ESLint configuration and includes two custom rules:
+
+1. `no-console`: Warns about the use of console.log statements
+2. `no-unused-vars`: Warns when there is unused variables
+3. `semi`: Warns when there is no semi colon
+
+### Prettier
+
+The `.prettierrc` file contains our Prettier configuration, which includes:
+
+- Single quotes for strings
+- 2 space indentation
+
+## npm Scripts
+
+- `npm run lint`: Run ESLint on the entire project
+- `npm run format`: Run Prettier on all files
+- `npm run prepare`: Run linting and formatting before each commit.
